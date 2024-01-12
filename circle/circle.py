@@ -1,5 +1,6 @@
 import math
 
+
 class Circle():
     # INICIALIZAMOS CON RADIUS
     def __init__(self, radius):
@@ -28,12 +29,7 @@ class Circle():
         return self
 
     def __str__(self):
-        import turtle
-        turtle.circle(self.radius)
-        turtle.title("Círculo")
-        turtle.bgcolor("red")
-        turtle.color("blue")
-        return ""
+        return f'Circle con un radio de {self.radius}'
 
 
 ab = Circle(100)
