@@ -4,7 +4,7 @@ import math
 class Circle():
     # INICIALIZAMOS CON RADIUS
     def __init__(self, radius):
-        if radius >= 0:
+        if radius > 0:
             self.radius = radius
         else:
             raise ValueError('El radio debe ser mayor a 0')
@@ -13,7 +13,7 @@ class Circle():
         return self.radius
 
     def set_radius(self, radius):
-        if radius >= 0:
+        if radius > 0:
             self.radius = radius
         else:
             raise ValueError('El radio debe ser mayor a 0')
@@ -27,7 +27,7 @@ class Circle():
         return  math.pi* (self.radius*2)
     
     def __mul__(self, n):
-        if n >= 0:
+        if n > 0:
             self.radius = self.radius * n
         else:
             raise ValueError(
