@@ -6,7 +6,7 @@ def simple_list():
     for x in range(10):
         dict = {}
         dict['id'] = x
-        dict['age'] = randint(0, 100)  # NUMERO ALEATORIO DE 0 a 100
+        dict['age'] = randint(1, 100)  # NUMERO ALEATORIO DE 1 a 100
         list.append(dict)  # AGREGO A LA LISTA
     return list
 
